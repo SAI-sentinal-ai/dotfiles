@@ -1,0 +1,251 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.wordWrap": "on",
+    "security.workspace.trust.enabled": false,
+    "editor.fontSize": 15,
+    "[latex]": {
+        //"editor.fontFamily": "'Adobe Caslon Pro', monospace",
+        //"editor.fontSize": 20,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
+        "editor.minimap.enabled": false
+    },
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.recipes": [
+
+        {
+            "name": "latexmk 🔃",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "latexmk (latexmkrc)",
+            "tools": [
+                "latexmk_rconly"
+            ]
+        },
+        {
+            "name": "latexmk (lualatex)",
+            "tools": [
+                "lualatexmk"
+            ]
+        },
+        {
+            "name": "latexmk (xelatex)",
+            "tools": [
+                "xelatexmk"
+            ]
+        },
+        {
+            "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "Compile Rnw files",
+            "tools": [
+                "rnw2tex",
+                "latexmk"
+            ]
+        },
+        {
+            "name": "Compile Jnw files",
+            "tools": [
+                "jnw2tex",
+                "latexmk"
+            ]
+        },
+        {
+            "name": "tectonic",
+            "tools": [
+                "tectonic"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "lualatexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-lualatex",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "xelatexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-xelatex",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "latexmk_rconly",
+            "command": "latexmk",
+            "args": [
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "rnw2tex",
+            "command": "Rscript",
+            "args": [
+                "-e",
+                "knitr::opts_knit$set(concordance = TRUE); knitr::knit('%DOCFILE_EXT%')"
+            ],
+            "env": {}
+        },
+        {
+            "name": "jnw2tex",
+            "command": "julia",
+            "args": [
+                "-e",
+                "using Weave; weave(\"%DOC_EXT%\", doctype=\"tex\")"
+            ],
+            "env": {}
+        },
+        {
+            "name": "jnw2texmintex",
+            "command": "julia",
+            "args": [
+                "-e",
+                "using Weave; weave(\"%DOC_EXT%\", doctype=\"texminted\")"
+            ],
+            "env": {}
+        },
+        {
+            "name": "tectonic",
+            "command": "tectonic",
+            "args": [
+                "--synctex",
+                "--keep-logs",
+                "%DOC%.tex"
+            ],
+            "env": {}
+        }
+    ],
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Nord",
+    "workbench.colorTheme": "Nord",
+    "grammarly.config.suggestions.PrepositionAtTheEndOfSentence": true,
+    "grammarly.files.include": [
+        "**/readme.md",
+        "**/README.md",
+        "**/*.tex"
+    ],
+    "workbench.preferredLightColorTheme": "Icy Kiss Light",
+    "editor.fontFamily": "'iA Writer Quattro V'",
+    "editor.fontLigatures": true,
+    "workbench.editorAssociations": {
+        "*.stl": "3dviewer.viewer"
+    },
+    "python.defaultInterpreterPath": "/Users/hsai002/Programming/PyCharm-testing-m1-py3/venv/bin/python",
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontSize": 15,
+    "terminal.external.osxExec": "iTerm x86_64.app",
+    "editor.inlineSuggest.enabled": true,
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "fish": {
+            "path": "fish",
+            "args": [
+                "-l"
+            ]
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "rosetta": {
+            "path": "arch",
+            "args": ["-x86_64", "bash", "-l"],
+            "overrideName": true
+          }
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "latex": false,
+        "csv": false
+    },
+    "matlab.mlintpath": "/System/Volumes/Data/Applications/MATLAB_R2021b.app/bin/maci64/mlint",
+    "telemetry.telemetryLevel": "off",
+    "matlab.linterConfig": "",
+    "matlab.matlabpath": "/System/Volumes/Data/Applications/MATLAB_R2021b.app/bin/matlab",
+    "explorer.confirmDelete": false,
+    "workbench.colorCustomizations": {
+        "breadcrumbPicker.background" : "#fafafa",
+        "breadcrumb.focusForeground" : "#7cdbf6",
+        "breadcrumb.activeSelectionForeground" : "#7cdbf6"
+    }
+}
