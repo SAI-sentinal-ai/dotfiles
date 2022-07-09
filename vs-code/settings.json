@@ -178,7 +178,7 @@
     ],
     "window.autoDetectColorScheme": true,
     "workbench.preferredDarkColorTheme": "Nord",
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "Icy Kiss Light",
     "grammarly.config.suggestions.PrepositionAtTheEndOfSentence": true,
     "grammarly.files.include": [
         "**/readme.md",
