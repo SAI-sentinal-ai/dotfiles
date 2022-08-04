@@ -188,10 +188,7 @@
     "workbench.preferredLightColorTheme": "Icy Kiss Light",
     "editor.fontFamily": "'iA Writer Quattro V'",
     "editor.fontLigatures": true,
-    "workbench.editorAssociations": {
-        "*.stl": "3dviewer.viewer"
-    },
-    "python.defaultInterpreterPath": "/Users/hsai002/Programming/PyCharm-testing-m1-py3/venv/bin/python",
+    "python.defaultInterpreterPath": "/Users/hsai002/miniforge3/envs/myenv_x86/bin/python",
     "terminal.integrated.fontFamily": "Fira Code",
     "terminal.integrated.fontSize": 15,
     "terminal.external.osxExec": "iTerm x86_64.app",
@@ -226,7 +223,7 @@
         },
         "rosetta": {
             "path": "arch",
-            "args": ["-x86_64", "bash", "-l"],
+            "args": ["-x86_64", "zsh", "-l"],
             "overrideName": true
           }
     },
@@ -247,5 +244,29 @@
         "breadcrumbPicker.background" : "#fafafa",
         "breadcrumb.focusForeground" : "#7cdbf6",
         "breadcrumb.activeSelectionForeground" : "#7cdbf6"
-    }
+    },
+    "jupyter.askForKernelRestart": false,
+    "notebook.compactView": false,
+    "notebook.editorOptionsCustomizations": {
+        "editor.fontSize": 16
+    },
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "spellchecker.ignoreWordsList": [
+        "Intrafusal",
+        "disynaptic",
+        "Monosynaptic",
+        "monosynaptic",
+        "Interneurons",
+        "interneurons",
+        "Renshaw"
+    ],
+    "spellchecker.language": "en_GB-ise",
+    "editor.minimap.enabled": false,
+    "terminal.integrated.inheritEnv": false,
+    "python.terminal.activateEnvironment": false,
+    "window.zoomLevel": -1
 }

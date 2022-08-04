@@ -1,0 +1,10 @@
+{
+  "minimal-advanced@@cursor": "default",
+  "minimal-style@@h1-l": true,
+  "minimal-style@@h1-style": "normal",
+  "minimal-style@@h2-style": "italic",
+  "minimal-style@@h2-l": false,
+  "minimal-style@@h2-variant": "normal",
+  "minimal-style@@bg-translucency-light": 0.7,
+  "minimal-style@@text-code@@light": "#4A8AFF"
+}
